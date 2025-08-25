@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #fff;
+    --card: #fff5f5;
+
+    --accent: #ec0026;
+    --accent-2: #ff6b6b;
+    --accent-3: #fdc017;
+    --accent-4: #f0eae9;
+
+    --text: #313131;
+    --text-inverse: #ffe9e9;
+    --font-primary: "Inter", sans-serif;
+    --font-secondary: "Montserrat", sans-serif;
+
+    --border: 1px solid;
+    --radius: 3px;
+    --radius-btn: 10px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-primary);
+}
+
+#root {}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-secondary);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: var(--font-secondary);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
