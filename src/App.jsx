@@ -8,7 +8,9 @@ function App() {
     return (
         <>
             <Header />
-            <div className='quiz-container'> </div>    
+            <div className='quiz-container'>
+                <div className='card'></div>
+            </div>    
         </>    
     )
 }
