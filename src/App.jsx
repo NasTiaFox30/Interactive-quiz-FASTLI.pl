@@ -6,6 +6,8 @@ import './index.css';
 import './App.css';
 
 function App() {
+    const [step, setStep] = useState(0);
+
     return (
         <>
             <Header />
