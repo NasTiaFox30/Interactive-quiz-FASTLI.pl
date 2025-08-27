@@ -27,6 +27,15 @@ function App() {
             <Header />
             <div className='quiz-container'>
                 {step === 0 && <StartScreen startQuiz={handleStart} />}
+                {step > 0 && step <= totalSteps && (
+                    <QuestionScreen
+                    question={questions[idxquestion]}
+                    onAnswer={handleAnswer}
+                    step={step}
+                    total={totalSteps}
+                    />
+                )}
+
             </div>    
         </>    
     )
