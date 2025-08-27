@@ -20,6 +20,11 @@ function App() {
             ...prev.filter((a) => a.key !== questionId),
             { key: questionId, ...option },
         ]);
+
+        // next question
+        if (step <= totalSteps) {
+            setStep(step + 1);
+        }   
     }
 
     return (
