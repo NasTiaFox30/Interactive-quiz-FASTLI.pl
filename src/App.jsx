@@ -14,6 +14,12 @@ function App() {
     const [answers, saveAnswers] = useState([]);
 
     function handleStart() { setStep(1); }
+    const handleAnswer = (questionId, option) => {
+        saveAnswers((prev) => [
+            ...prev.filter((a) => a.key !== questionId),
+            { key: questionId, ...option },
+        ]);
+    }
 
     return (
         <>
