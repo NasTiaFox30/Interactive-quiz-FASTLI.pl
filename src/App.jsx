@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from "./components/Header";
+import StartScreen from "./components/StartScreen";
 
 import './index.css';
 import './App.css';
