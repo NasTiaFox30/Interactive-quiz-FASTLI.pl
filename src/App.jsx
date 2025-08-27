@@ -8,6 +8,8 @@ import './App.css';
 function App() {
     const [step, setStep] = useState(0);
 
+    function handleStart() { setStep(1); }
+
     return (
         <>
             <Header />
