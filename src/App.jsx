@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { questions } from './data';
 import Header from "./components/Header";
 import StartScreen from "./components/StartScreen";
 
