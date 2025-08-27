@@ -11,6 +11,8 @@ function App() {
     const totalSteps = questions.length;
     let idxquestion = step - 1;
 
+    const [answers, saveAnswers] = useState([]);
+
     function handleStart() { setStep(1); }
 
     return (
