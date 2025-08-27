@@ -34,7 +34,11 @@ body {
     font-family: var(--font-primary);
 }
 
-#root {}
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 h1,
 h2,
