@@ -23,10 +23,16 @@ header {
 }
 
 .card {
+    background-color: var(--bg-2);
     border-radius: var(--radius);
     min-height: 300px;
-    width: 800px;
+    width: min(700px, 90vw);
     border: var(--border) var(--accent-4);
     border-radius: var(--radius);
     box-shadow: 4px 3px 2px 0px rgba(0, 0, 0, 0.1);
+
+    padding: 25px;
+    display: grid;
+    text-align: center;
+    gap: 10px;
 }
