@@ -1,5 +1,5 @@
 
-export default function StartScreen( startQuiz) {
+export default function StartScreen({startQuiz}) {
   return (
     <div className="card">
       <h1>Quiz - Znajdź fachowca dla siebie</h1>
