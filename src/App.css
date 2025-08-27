@@ -23,6 +23,7 @@ header {
 }
 
 .card {
+    border-radius: var(--radius);
     min-height: 300px;
     width: 800px;
     border: var(--border) var(--accent-4);
