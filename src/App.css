@@ -24,8 +24,8 @@ header {
 }
 
 .card {
-    min-height: 45px;
-    min-width: 500px;
+    min-height: 300px;
+    width: 800px;
     border: var(--border) var(--accent-4);
     border-radius: var(--radius);
     box-shadow: 4px 3px 2px 0px rgba(0, 0, 0, 0.1);
