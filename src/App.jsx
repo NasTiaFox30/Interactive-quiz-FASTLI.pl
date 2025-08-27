@@ -8,6 +8,7 @@ import './App.css';
 
 function App() {
     const [step, setStep] = useState(0);
+    const totalSteps = questions.length;
 
     function handleStart() { setStep(1); }
 
