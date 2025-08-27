@@ -2,7 +2,6 @@ header {
     background-color: var(--bg);
     padding: 10px 20px;
     box-shadow: 0 0px 3px var(--accent-2);
-    margin-bottom: 20px;
 }
 
 .logo {
