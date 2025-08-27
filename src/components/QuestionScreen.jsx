@@ -1,0 +1,14 @@
+export default function QuestionScreen({ question, onAnswer }) {
+  return (
+    <div className="card">
+      <h2 className="question">{question.text}</h2>
+      <div className="options">
+        {question.options.map((option, idx) => (
+          <button key={idx} onClick={() => onAnswer(option)}>
+            {option.text}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
