@@ -14,7 +14,7 @@ function App() {
         <>
             <Header />
             <div className='quiz-container'>
-                <div className='card'></div>
+                {step === 0 && <StartScreen startQuiz={handleStart} />}
             </div>    
         </>    
     )
