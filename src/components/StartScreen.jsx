@@ -4,7 +4,7 @@ export default function StartScreen() {
     <div className="card">
       <h1>Quiz - Znajdź fachowca dla siebie</h1>
       <p>Odpowiedz na kilka pytań - a my pomożemy dopasować ofertę!</p>
-      
+      <button className="start">Zaczynamy</button>
       </div>
     )
 }
