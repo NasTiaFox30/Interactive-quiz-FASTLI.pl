@@ -1,6 +1,7 @@
 export const specialists = {
-hydraulik: [
-{
+    hydraulik: [
+    categ_text = "Hydraulik",
+    {
     name: "Jan Kowalski",
     description: "Awaryjne naprawy, cieknące krany i rury.",
     icon: "🛠️",
@@ -22,7 +23,8 @@ hydraulik: [
     rating: 4.6,
     },
 ],
-elektryk: [
+    elektryk: [
+    categ_text = "Elektryk",
     {
     name: "Piotr Zieliński",
     description: "Instalacje, bezpieczniki, oświetlenie.",
@@ -38,7 +40,8 @@ elektryk: [
     rating: 4.8,
     },
 ],
-zlota_raczka: [
+    zlota_raczka: [
+    categ_text = "Złota rączka",
     {
     name: "Andrzej Malinowski",
     description: "Drobne naprawy, montaż półek, mebli.",
@@ -54,7 +57,8 @@ zlota_raczka: [
     rating: 4.5,
     },
 ],
-fryzjer: [
+    fryzjer: [
+    categ_text = "Fryzjer",
     {
     name: "Anna Kowalska",
     description: "Strzyżenie damskie i męskie, stylizacja.",
@@ -70,7 +74,8 @@ fryzjer: [
     rating: 4.7,
     },
 ],
-ogrodnik: [
+    ogrodnik: [
+    categ_text = "Ogrodnik",
     {
     name: "Paweł Kwiatkowski",
     description: "Pielęgnacja ogrodów, koszenie trawy.",
