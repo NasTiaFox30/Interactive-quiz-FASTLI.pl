@@ -7,7 +7,7 @@ import QuestionScreen from "./components/QuestionScreen";
 import './index.css';
 import './App.css';
 
-function App() {
+export default function App() {
     const [step, setStep] = useState(0);
     const totalSteps = questions.length;
 
@@ -44,5 +44,3 @@ function App() {
         </>    
     )
 }
-
-export default App;
