@@ -28,6 +28,8 @@ export default function App() {
         }   
     }
 
+    const resultCategory = step > totalSteps ? calculateResult(answers) : null;
+
     return (
         <>
             <Header />
