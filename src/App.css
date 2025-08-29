@@ -58,3 +58,32 @@ header {
     color: var(--text-inverse);
     transform: translateY(-2px);
 }
+
+.specialists-list {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.specialist-card {
+    background-color: var(--accent-4);
+    border-radius: var(--radius);
+    color: var(--text);
+    text-align: left;
+    padding: 14px 18px;
+    border: var(--border) var(--accent-4);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    display: grid;
+    gap: 10px;
+
+}
+
+.specialist-card:hover {
+    transform: translateY(-2px);
+}
+
+.specialist-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
