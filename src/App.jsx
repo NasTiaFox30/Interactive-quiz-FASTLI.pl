@@ -28,6 +28,11 @@ export default function App() {
         }   
     }
 
+    function handleRestart() {
+        setStep(0);
+        saveAnswers([]);
+    }
+
     const resultCategory = step > totalSteps ? calculateResult(answers) : null;
 
     return (
