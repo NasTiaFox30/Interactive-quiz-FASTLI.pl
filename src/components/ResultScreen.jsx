@@ -2,12 +2,10 @@ import { getTopSpecialists } from "../utils";
 import { specialists } from "../data/specialists";
 
 export default function ResultScreen({ resultCategory }) {
-  if (!resultCategory || !specialists[resultCategory]) {
-    return <div>Brak danych o fachowcu ;(</div>;
-  }
 
-  const categoryData = specialists[resultCategory];
-  const categoryName = categoryData.categ_text;
+const top = getTopSpecialists(resultCategory, 3);
+const readable = specialists[resultCategory]?.label || "Fachowiec";
+
 
   return (
     <div className="card">
