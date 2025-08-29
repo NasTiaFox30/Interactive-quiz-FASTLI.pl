@@ -10,7 +10,6 @@ import './App.css';
 function App() {
     const [step, setStep] = useState(0);
     const totalSteps = questions.length;
-    let idxquestion = step - 1;
 
     const [answers, saveAnswers] = useState([]);
 
@@ -34,10 +33,10 @@ function App() {
                 {step === 0 && <StartScreen startQuiz={handleStart} />}
                 {step > 0 && step <= totalSteps && (
                     <QuestionScreen
-                    question={questions[idxquestion]}
-                    onAnswer={handleAnswer}
-                    step={step}
-                    total={totalSteps}
+                        question={questions[step - 1]}
+                        onAnswer={handleAnswer}
+                        step={step}
+                        total={totalSteps}
                     />
                 )}
 
