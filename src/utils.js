@@ -40,3 +40,13 @@ if (keys.length === 0) return "złota_rączka"; // default
 
 return keys.reduce((a, b) => (scoreMap[a] > scoreMap[b] ? a : b));
 }
+
+// Show top-3  specialists
+export function getTopSpecialists(category, topN = 3) {
+  const categoryData = specialists[category];
+  if (!categoryData?.list) return [];
+  return categoryData.list
+    .slice()
+    .sort((a, b) => b.rating - a.rating)
+    .slice(0, topN);
+}
