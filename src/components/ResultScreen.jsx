@@ -1,7 +1,7 @@
 import { getTopSpecialists } from "../utils";
 import { specialists } from "../data/specialists";
 
-export default function ResultScreen({ resultCategory }) {
+export default function ResultScreen({ resultCategory, resetQuiz }) {
 
 const top = getTopSpecialists(resultCategory, 3);
 const readable = specialists[resultCategory]?.label || "Fachowiec";

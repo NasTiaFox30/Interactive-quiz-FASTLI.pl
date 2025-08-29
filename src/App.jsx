@@ -49,7 +49,7 @@ export default function App() {
                     />
                 )}
                 {step > totalSteps && (
-                    <ResultScreen resultCategory={resultCategory}  />)
+                    <ResultScreen resultCategory={resultCategory} resetQuiz={handleRestart} />)
                 }
 
             </div>
