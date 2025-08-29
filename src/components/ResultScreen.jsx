@@ -1,4 +1,5 @@
-import { specialists } from "./specialists";
+import { getTopSpecialists } from "../utils";
+import { specialists } from "../data/specialists";
 
 export default function ResultScreen({ resultCategory }) {
   if (!resultCategory || !specialists[resultCategory]) {
