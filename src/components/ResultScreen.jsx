@@ -27,8 +27,8 @@ const readable = specialists[resultCategory]?.label || "Fachowiec";
                     </div>
 
                      <div className="contact-row">
-                    <a className="btn" href={`tel:${spec.phone}`}>Zadzwoń</a>
-                        <a className="btn secondary" href={`/kontakt?category=${encodeURIComponent(resultCategory)}&name=${encodeURIComponent(spec.name)}`}>Umów wizytę</a>
+                    <a className="contact_link secondary" href={`tel:${spec.phone}`}>Zadzwoń</a>
+                        <a className="contact_link" href={`/kontakt?category=${encodeURIComponent(resultCategory)}&name=${encodeURIComponent(spec.name)}`}>Umów wizytę</a>
                     </div>
                 </div>
         ))}</div>
