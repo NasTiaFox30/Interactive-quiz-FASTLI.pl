@@ -43,6 +43,9 @@ export default function App() {
                         total={totalSteps}
                     />
                 )}
+                {step > totalSteps && (
+                    <ResultScreen resultCategory={resultCategory}  />)
+                }
 
             </div>
         </>
