@@ -25,6 +25,11 @@ const readable = specialists[resultCategory]?.label || "Fachowiec";
                     <div className="specialist-row">
                         <span>⭐ {spec.rating.toFixed(1)}</span>
                     </div>
+
+                     <div className="contact-row">
+                    <a className="btn" href={`tel:${spec.phone}`}>Zadzwoń</a>
+                        <a className="btn secondary" href={`/kontakt?category=${encodeURIComponent(resultCategory)}&name=${encodeURIComponent(spec.name)}`}>Umów wizytę</a>
+                    </div>
                 </div>
         ))}</div>
     </div>
