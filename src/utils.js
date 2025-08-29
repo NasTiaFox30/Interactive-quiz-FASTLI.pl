@@ -35,6 +35,8 @@ scoreMap["fryzjer"] = (scoreMap["fryzjer"] || 0) + 2;
 scoreMap["ogrodnik"] = (scoreMap["ogrodnik"] || 0) + 2;
 }
 
+const keys = Object.keys(scoreMap);
+if (keys.length === 0) return "złota_rączka"; // default
 
 return keys.reduce((a, b) => (scoreMap[a] > scoreMap[b] ? a : b));
 }
