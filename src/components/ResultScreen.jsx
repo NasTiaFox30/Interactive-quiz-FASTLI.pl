@@ -31,7 +31,11 @@ const readable = specialists[resultCategory]?.label || "Fachowiec";
                         <a className="contact_link" href={`/kontakt?category=${encodeURIComponent(resultCategory)}&name=${encodeURIComponent(spec.name)}`}>Umów wizytę</a>
                     </div>
                 </div>
-        ))}</div>
+            ))}</div>
+          
+        <div className="reset">
+            <button className="reset-btn" onClick={resetQuiz}>Powtórz ponownie ↺</button>
+        </div>
     </div>
     );
 }
