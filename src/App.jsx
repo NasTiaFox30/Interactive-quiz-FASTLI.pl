@@ -1,8 +1,10 @@
 import { useState } from 'react';
-import { questions } from './data';
 import Header from "./components/Header";
 import StartScreen from "./components/StartScreen";
 import QuestionScreen from "./components/QuestionScreen";
+import ResultScreen from './components/ResultScreen';
+import { questions } from './data/questions';
+import { calculateResult } from "./utils";
 
 import './index.css';
 import './App.css';
