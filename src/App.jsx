@@ -52,7 +52,7 @@ export default function App() {
             <Header />
             <div className='quiz-container'>
                 {step === 0 && <StartScreen startQuiz={handleStart} />}
-                {step > 0 && step <= totalSteps && (
+                {step > 0 && (!showResult) && (
                     <QuestionScreen
                         question={questions[step - 1]}
                         onAnswer={handleAnswer}
