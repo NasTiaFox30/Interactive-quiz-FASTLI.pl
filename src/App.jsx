@@ -15,6 +15,8 @@ export default function App() {
 
     const [answers, saveAnswers] = useState([]);
 
+    const [showResult, setShowResult] = useState(false);
+
     function handleStart() { setStep(1); }
     const handleAnswer = (questionId, option) => {
         saveAnswers((prev) => [
