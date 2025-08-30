@@ -6,26 +6,11 @@ export default function BG_animation() {
   return (
     <div className="bg-animation">
       {icons.map((icon, idx) => (
-          <motion.span
-            className="floating-icons"
-            key={idx}
-            initial={{ y: Math.random() + window.innerHeight, x: Math.random() * window.innerWidth }}
-            animate={{ y: "-10vh" }}
-            transition={{
-                duration: Math.random() * 5 + 5,
-                repeat: Infinity,
-                repeatType: "loop",
-                ease: "linear"
-            }}
-            style={{
-            position: "absolute",
-            fontSize: Math.random() * 20 + 24,
-            opacity: 0.3
-          }}
-        >
-          {icon}
-        </motion.span>
+        <FloatingIcon key={idx} icon={icon} />
       ))}
     </div>
   );
+}
+function FloatingIcon({ icon }) {
+  
 }
