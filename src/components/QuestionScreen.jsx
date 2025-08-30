@@ -1,4 +1,6 @@
-export default function QuestionScreen({ question, onAnswer }) {
+import ProgressBar from "./ProgressBar";
+
+export default function QuestionScreen({ question, onAnswer, step, total }) {
   return (
     <div className="card">
       <h2 className="question">{question.text}</h2>
