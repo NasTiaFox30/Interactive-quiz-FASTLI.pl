@@ -33,7 +33,17 @@ export default function App() {
     function handleRestart() {
         setStep(0);
         saveAnswers([]);
+        setShowResult(false);
     }
+
+    useEffect(() => {
+        if (step > totalSteps) {
+            const timer = setTimeout(() => {
+                setShowResult(true);
+            }, 1000);
+            return () => clearTimeout(timer);
+        }
+    }, [step, totalSteps]);
 
     const resultCategory = step > totalSteps ? calculateResult(answers) : null;
 
