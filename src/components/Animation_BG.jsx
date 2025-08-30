@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 const icons = ['🛠️', '⚙️', '💅', '💇‍♀️', '🫂', '🌳', '🧑‍🌾',  '💡', '🍽️', '🏡', '📖', '💼', '⚡', '🎼', '🧹', '💉', '💻', '📱'];
@@ -11,6 +12,7 @@ export default function BG_animation() {
     </div>
   );
 }
+
 function FloatingIcon({ icon }) {
   
 }
