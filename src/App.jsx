@@ -54,7 +54,7 @@ export default function App() {
                 {step === 0 && <StartScreen startQuiz={handleStart} />}
                 {step > 0 && (!showResult) && (
                     <QuestionScreen
-                        question={questions[step - 1]}
+                        question={questions[Math.min(step - 1, totalSteps - 1)]}
                         onAnswer={handleAnswer}
                         step={step}
                         total={totalSteps}
