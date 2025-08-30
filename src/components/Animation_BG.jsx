@@ -9,7 +9,7 @@ export default function BG_animation() {
           <motion.span
             className="floating-icons"
             key={idx}
-            initial={{ y: "100vh", x: Math.random() * window.innerWidth }}
+            initial={{ y: Math.random() + window.innerHeight, x: Math.random() * window.innerWidth }}
             animate={{ y: "-10vh" }}
             transition={{
                 duration: Math.random() * 5 + 5,
