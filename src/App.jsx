@@ -60,7 +60,7 @@ export default function App() {
                         total={totalSteps}
                     />
                 )}
-                {step > totalSteps && (
+                {step > totalSteps && showResult && (
                     <ResultScreen resultCategory={resultCategory} resetQuiz={handleRestart} />)
                 }
 
