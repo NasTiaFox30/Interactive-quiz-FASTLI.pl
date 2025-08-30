@@ -17,6 +17,11 @@ export default function BG_animation() {
                 repeatType: "loop",
                 ease: "linear"
             }}
+            style={{
+            position: "absolute",
+            fontSize: Math.random() * 20 + 24,
+            opacity: 0.3
+          }}
         >
           {icon}
         </motion.span>
