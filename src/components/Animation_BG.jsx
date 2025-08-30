@@ -25,8 +25,8 @@ function FloatingIcon({ icon }) {
     <motion.span
       key={key}
       className="floating-icons"
-      initial={{ y: randomY, x: randomX, opacity: 0.2 }}
-      animate={{ y: "-10vh" }}
+      initial={{ y: randomY, x: randomX, opacity: 0.1 }}
+      animate={{ y: "-10vh", opacity: 0.3 }}
       transition={{
         duration: randomDuration,
         ease: "linear"
