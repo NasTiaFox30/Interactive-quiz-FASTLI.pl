@@ -5,6 +5,7 @@ import QuestionScreen from "./components/QuestionScreen";
 import ResultScreen from './components/ResultScreen';
 import { questions } from './data/questions';
 import { calculateResult } from "./utils";
+import  BG_animation  from './components/Animation_BG';
 
 import './index.css';
 import './App.css';
@@ -49,6 +50,7 @@ export default function App() {
 
     return (
         <>
+            <BG_animation />
             <Header />
             <div className='quiz-container'>
                 {step === 0 && <StartScreen startQuiz={handleStart} />}
