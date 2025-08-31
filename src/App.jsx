@@ -60,8 +60,18 @@ export default function App() {
                          <motion.div
                             key={step} 
                             initial={{ opacity: 0, x: 50 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: -50 }}
+                            animate={
+                                step > totalSteps
+                                    ? { display: "none" }
+                                    : { opacity: 1, x: 0 }}
+                            exit={
+                             step >= totalSteps
+                                    ? {
+                                        transition: { duration: 0.6, ease: "easeInOut" },
+                                        opacity: 0
+                                    }
+                                :{ opacity: 0, x: -50 }
+                            }
                             transition={{ duration: 0.4, ease: "easeInOut" }}
                         >
                             <QuestionScreen
