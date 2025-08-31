@@ -54,11 +54,22 @@ export default function App() {
             <BG_animation />
             <Header />
             <div className='quiz-container'>
-                {step === 0 && <StartScreen startQuiz={handleStart} />}
                 <AnimatePresence mode="wait">
-                    {step > 0 && (!showResult) && (
-                         <motion.div
-                            key={step} 
+                    {step === 0 && (
+                        <motion.div
+                            key="start"
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 0.95 }}
+                            transition={{ duration: 0.4 }}
+                        >
+                            <StartScreen startQuiz={handleStart} />
+                        </motion.div>
+                    )}
+
+                    {step > 0 && !showResult && (
+                        <motion.div
+                            key={`question-${step}`}
                             initial={{ opacity: 0, x: 50 }}
                             animate={
                                 step > totalSteps
