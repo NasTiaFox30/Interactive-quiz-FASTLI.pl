@@ -1,7 +1,9 @@
+import logo from '../assets/logo-vector.svg';
+
 function Header() {
   return (
 <header>
-    <div className="logo"><a href="https://fastli.pl/"><img src="../src/assets/logo-vector.svg" /></a><b>  ~ Znajdź dla siebie fachowca ~ </b></div>
+    <div className="logo"><a href="https://fastli.pl/"><img src={logo} /></a><b>  ~ Znajdź dla siebie fachowca ~ </b></div>
         </header>
     );
 }
