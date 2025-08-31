@@ -1,7 +1,7 @@
 function Header() {
   return (
 <header>
-    <div className="logo"><img src="../src/assets/logo-vector.svg" /><b>  ~ Znajdź dla siebie fachowca ~ </b></div>
+    <div className="logo"><a href="https://fastli.pl/"><img src="../src/assets/logo-vector.svg" /></a><b>  ~ Znajdź dla siebie fachowca ~ </b></div>
         </header>
     );
 }
