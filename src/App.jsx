@@ -33,9 +33,12 @@ export default function App() {
     }
 
     function handleRestart() {
-        setStep(0);
-        saveAnswers([]);
         setShowResult(false);
+        setStep(0);
+        const timer = setTimeout(() => {
+            saveAnswers([]);
+        }, 1000);
+        return () => clearTimeout(timer);
     }
 
     useEffect(() => {
