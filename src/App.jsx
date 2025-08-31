@@ -83,10 +83,6 @@ export default function App() {
                         </motion.div>
                     )}
                 </AnimatePresence>
-                {step > totalSteps && showResult && (
-                    <ResultScreen resultCategory={resultCategory} resetQuiz={handleRestart} />)
-                }
-
             </div>
         </>
     );
