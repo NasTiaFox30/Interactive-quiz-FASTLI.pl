@@ -94,7 +94,7 @@ export default function App() {
                             />
                         </motion.div>
                     )}
-                
+
                     {step > totalSteps && showResult && (
                         <motion.div
                             key="result"
