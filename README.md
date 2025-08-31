@@ -1,12 +1,34 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vite
 
-Currently, two official plugins are available:
+## Liczba godzin
+Orientacyjna - 30
+Rzeczywista -  40 god.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Rozpoczęty - Zakończony
+25.08.2025 - 31.08.25
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Application:
+Prosty inteaktywny quiz dla poszukiwania pasującego fachowca
+
+# Raport / Opis:
+Aplikacja stworzona z wykorzystaniam:
+Dev enviroment - Vite.js
+HTML + CSS3 + JS (REACT library)
+
+
+### Uruchomienie lokalne:
+```
+npm run dev
+```
+
+Link aplkacji:
+http://localhost:5173/Interactive-quiz-FASTLI.pl/
+
+### Online testowanie:
+Deploy Web Aplikacji REACT/VITE - GitHub Pages
+https://nastiafox30.github.io/Interactive-quiz-FASTLI.pl/
+
+---------------------------------------------------------------
+_**Creator: Anastasiia Bzova 2025**_
