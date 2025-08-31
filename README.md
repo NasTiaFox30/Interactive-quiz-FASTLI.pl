@@ -17,6 +17,9 @@ Aplikacja stworzona z wykorzystaniam:
 Dev enviroment - Vite.js
 HTML + CSS3 + JS (REACT library)
 
+## Libraries
+- framer-motion
+- gh-pages --save-dev
 
 ### Uruchomienie lokalne:
 ```
