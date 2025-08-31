@@ -55,14 +55,24 @@ export default function App() {
             <Header />
             <div className='quiz-container'>
                 {step === 0 && <StartScreen startQuiz={handleStart} />}
-                {step > 0 && (!showResult) && (
-                    <QuestionScreen
-                        question={questions[Math.min(step - 1, totalSteps - 1)]}
-                        onAnswer={handleAnswer}
-                        step={step}
-                        total={totalSteps}
-                    />
-                )}
+                <AnimatePresence mode="wait">
+                    {step > 0 && (!showResult) && (
+                         <motion.div
+                            key={step} 
+                            initial={{ opacity: 0, x: 50 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: -50 }}
+                            transition={{ duration: 0.4, ease: "easeInOut" }}
+                        >
+                            <QuestionScreen
+                                question={questions[Math.min(step - 1, totalSteps - 1)]}
+                                onAnswer={handleAnswer}
+                                step={step}
+                                total={totalSteps}
+                            />
+                        </motion.div>
+                    )}
+                </AnimatePresence>
                 {step > totalSteps && showResult && (
                     <ResultScreen resultCategory={resultCategory} resetQuiz={handleRestart} />)
                 }
